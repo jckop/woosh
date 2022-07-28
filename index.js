@@ -4,7 +4,7 @@
  * woosh
  * a fun cli project im working on
  *
- * @author jck <https://github.com/jckop>
+ * @author jck <https://github.com/jckop/woosh>
  */
 
 const init = require('./utils/init');
@@ -20,5 +20,6 @@ const { clear, debug } = flags;
 	input.includes(`help`) && cli.showHelp(0);
 	input.includes(`djs`) && spawn('npm', ['i', 'discord.js']);
 	input.includes(`fol`) && spawn('mkdir', ['Commands', 'Functions', 'Models']);
+
 	debug && log(flags);
 })();

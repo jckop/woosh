@@ -4,7 +4,7 @@ const meowHelp = require('cli-meow-help');
 const flags = {
 	clear: {
 		type: `boolean`,
-		default: false,
+		default: true,
 		alias: `c`,
 		desc: `Clear the console`
 	},
